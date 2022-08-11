@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="http://localhost:3000/client"></script>
+
+    <style>
+    .div-inline{
+      display:inline-block;
+    }
+    </style>
+    <title>EeasyWallet</title>
+</head>
+<body>
+    <div class="px-4 pt-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">EeasyWallet App</h1>
+
+        <div id="accountContainer" class="text-left mb-4">
+            <h2>Account details</h2>
+            <p id="addressETH" style="font-size: 25;">Ethereum address: </p>
+            <br>
+            <p id="addressBTC" style="font-size: 25;">Bitcoin address: </p>
+            <br>
+            <p id="balanceETH" style="font-size: 25;">ETH balance: </p>
+            <br>
+            <p id="balanceBTC" style="font-size: 25;">BTC balance: </p>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <p id="pDescription" class="lead mb-4">Hello and welcome to our first cryptocurreny wallet application project, in order to create new account press on "Create Account". to restore existing registered wallet press "Restore Account" </p>
+
+          <div id="inputWordsContainer" class="input-group mb-4">
+            <span class="input-group-text ">Seed Words:</span>
+            <input type="text" class="form-control" id="inputWords" placeholder="12 words" readonly>
+          </div>
+
+          <button id="btnContinue" type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Continue</button>
+
+          <button id="btnSendTransaction" type="button" class="btn btn-primary btn-lg px-4 me-sm-3 mb-4">New Transaction</button>
+
+          <div id="inputToContainer" class="input-group mb-4">
+            <span class="input-group-text ">Address</span>
+            <input type="text" class="form-control" id="inputTo" placeholder="Address to transfer">
+          </div>
+
+          <div id="inputAmountContainer" class="input-group mb-4">
+            <input type="text" class="form-control" id="inputAmount" placeholder="Amount that will be sent">
+            <span id="amountTag" class="input-group-text ">ETH</span>
+          </div>
+
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-4"> 
+          <button id="btnSend" type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Send</button>
+          <div id="btnCoinSelect">
+            <button class="btn btn-warning dropdown-toggle btn-lg px-4 me-sm-3" type="button" id="coinDropDown" data-bs-toggle="dropdown" aria-expanded="false">
+              Currency: ETH
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="coinDropDown">
+              <li id="eth"><a class="dropdown-item" href="#">Ethereum</a></li>
+              <li id="btc"><a class="dropdown-item" href="#">Bitcoin</a></li>
+              <li id="other"><a class="dropdown-item" href="#">Other coin</a></li>
+            </ul>
+          </div>
+        </div>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-4"> 
+            <button id="btnCreate" type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Create Account</button>
+            <button id="btnRestore" type="button" class="btn btn-outline-secondary btn-lg px-4">Restore Account</button>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 38vh;">
+          <div class="container px-5">
+            <img src="http://localhost:3000/walletimage" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>

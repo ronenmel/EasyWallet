@@ -1,0 +1,27 @@
+{
+  "name": "easywallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bigi": "^1.4.2",
+    "bip32": "^3.0.1",
+    "bip39": "^3.0.4",
+    "bitcoin-transaction": "^1.2.1",
+    "bitcoinjs-lib": "^6.0.1",
+    "bitcore-explorers": "^1.0.1",
+    "crypto": "^1.0.1",
+    "ecpair": "^2.0.1",
+    "express": "^4.18.1",
+    "hex-to-binary": "^1.0.1",
+    "mnemonic-to-key-pair": "^1.0.0",
+    "tiny-secp256k1": "^2.2.1",
+    "web3": "^1.7.4"
+  }
+}
